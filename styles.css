@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "game";
+    src: url(./fonts/ARCADECLASSIC.TTF);
+}
+
+@font-face {
+    font-family: "game2";
+    src: url(./fonts/ARCADE.TTF);
+}
+
+div[class*="cell"] {
+    background-color: plum;
+    /* width: 200px;
+    height: 200px; */
+    border: 2px solid black;
+}
+
+div[class*="cell"]:hover {
+    background-color: aquamarine;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: "game2";
+    font-size: 100px;
+    color: brown;
+}
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cell {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border: 2px solid green;
+}
+
+body {
+
+    padding: 0;
+    margin: 0;
+    background-color: rgba(128, 128, 128, 0.63);
+}
+
+.copy {
+    background-color: antiquewhite;
+    position: fixed;
+    bottom: 0;
+    align-self: stretch;   
+}
