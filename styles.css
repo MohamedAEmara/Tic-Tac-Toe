@@ -10,7 +10,7 @@
 
 div[class*="cell"] {
     background-color: plum;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 div[class*="cell"]:hover {
@@ -41,7 +41,7 @@ div[class*="cell"]:hover {
     background-color: aqua;
     /* width: 200px; */
     /* height: 200px; */
-    border: 2px solid green;
+    border: 1px solid black;
 }
 
 body {
