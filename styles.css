@@ -10,18 +10,16 @@
 
 div[class*="cell"] {
     background-color: plum;
-    /* width: 200px;
-    height: 200px; */
     border: 2px solid black;
 }
 
 div[class*="cell"]:hover {
     background-color: aquamarine;
 }
-.grid-container {
+#all {
     display: grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px 250px;
 }
 
 .title {
@@ -53,8 +51,70 @@ body {
 }
 
 .copy {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     position: fixed;
+    font-size: 20px;
     bottom: 0;
-    align-self: stretch;   
+    align-self: center;   
+}
+
+.cell  {
+    width: 250px;
+    height: 250px;
+    background-color: brown;
+    font-size: 170px;
+    text-align: center;
+    align-items: center;
+    padding-top: 020px;
+
+}
+
+
+.disable {
+    pointer-events: none;
+}
+
+
+
+#winner {
+    display: none;
+    /* background-color: brown; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#winner.enable {
+    pointer-events: all;
+    display: block;
+    filter: opacity(0.8);
+    align-items: center;
+    font-size: 100px;
+    position: absolute;
+    top: 450px;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+button {
+    padding: 20px;
+    font-size: 40px;
+    border-radius: 40px;
+}
+
+#title {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    /* marign-top: 50px; */
+    font-size: 120px;
+}
+
+.copy {
+    margin-bottom: 10px;
 }
